@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#09090b">
+  <link rel="icon" href="./assets/zephyron-symbol-white.png" type="image/png">
+  <meta name="description" content="Zephyron — мессенджер для Windows, macOS и Android.">
+  <title>Zephyron — На одной волне</title>
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('motion-ready');</script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">К содержимому</a>
+  <div class="backdrop" aria-hidden="true"><div class="glow glow-one"></div><div class="glow glow-two"></div><div class="grain"></div></div>
+  <header class="header">
+    <nav class="nav frost" aria-label="Zephyron">
+      <a class="brand" href="#main" aria-label="Zephyron"><span class="symbol-crop"><img class="theme-logo" src="./assets/zephyron-symbol-white.png" alt=""></span><span>Zephyron</span></a>
+      <a class="nav-download" href="./downloads.html" data-i18n="get">Скачать</a>
+      <div class="controls"><button id="language" type="button" aria-label="Switch to English">EN</button><span class="divider"></span><button id="theme" type="button" aria-label="Светлая тема"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10Z"/></svg></button></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-shell">
+        <div class="hero-meta"><span><i class="dot"></i><span data-i18n="eyebrow">Твоё пространство общения</span></span><span>PRIVATE PREVIEW&nbsp;&nbsp;/&nbsp;&nbsp;2026</span></div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 id="title" class="wordmark"><img class="theme-logo" src="./assets/zephyron-wordmark-white.png" alt="Zephyron" width="1536" height="1024"></h1>
+            <p class="headline" data-i18n="headline">На одной волне.</p>
+            <p class="intro" data-i18n="intro">Ближе к своим. Дальше от лишнего.</p>
+            <div class="hero-actions"><a class="cta" href="./downloads.html"><span data-i18n="download">Скачать Zephyron</span><span class="arrow" aria-hidden="true">↗</span></a><span class="platform-line">Windows&nbsp;&nbsp; / &nbsp;&nbsp;macOS&nbsp;&nbsp; / &nbsp;&nbsp;Android</span></div>
+          </div>
+          <div class="eclipse-scene" aria-hidden="true">
+            <div class="eclipse-grid"></div><div class="eclipse-ring ring-outer"></div><div class="eclipse-ring ring-inner"></div><div class="eclipse-corona"></div>
+            <div class="eclipse-disc"><img src="./assets/zephyron-symbol-white.png" alt="" width="1254" height="1254"></div><div class="eclipse-flare"></div>
+            <span class="eclipse-coordinate coordinate-left">Z / 01</span><span class="eclipse-coordinate coordinate-right">SIGNAL LOCKED</span>
+          </div>
+        </div>
+        <div class="hero-base"><span>01</span><span data-i18n="bubbleOne">Всегда рядом</span><span class="hero-rule"></span><a href="#product" aria-label="Scroll to product">↓</a></div>
+      </div>
+    </section>
+    <section id="product" class="product" aria-labelledby="product-title">
+      <div class="section-index"><span>01</span><span data-i18n="concept">Визуальный концепт интерфейса</span></div>
+      <div class="product-heading"><h2 id="product-title" data-i18n="bubbleTwo">Всё начинается с «привет»</h2><p data-i18n="intro">Ближе к своим. Дальше от лишнего.</p></div>
+      <div class="product-stage">
+        <div class="stage-orbit" aria-hidden="true"></div>
+        <div class="stage-note note-a"><span>01 / DESKTOP</span><span>MACOS EDITION</span></div><div class="stage-note note-b"><span>ZEPHYRON</span><span data-i18n="demoLabel">Демонстрационная переписка</span></div>
+        <div class="stage-seal" aria-hidden="true"><span>Z</span><i></i></div>
+        <div class="app-window">
+          <div class="app-titlebar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><strong>Zephyron</strong><span>MACOS / PREVIEW</span></div>
+          <div class="client-shell">
+            <aside class="client-sidebar">
+              <div class="sidebar-brand"><span class="client-wordmark"><img src="./assets/zephyron-wordmark-white.png" alt="Zephyron"></span><span class="presence-dot"></span><span class="mini-control" aria-hidden="true">◐</span><span class="mini-control" aria-hidden="true">EN</span></div>
+              <div class="client-search"><span aria-hidden="true">⌕</span><span data-i18n="search">Поиск</span></div>
+              <div class="chat-list">
+                <button type="button" class="chat-preview active" data-chat="alex" aria-pressed="true"><span class="mini-avatar avatar-a">A</span><span><strong data-i18n="alex">Алекс</strong><small data-i18n="previewOne">Тогда до встречи :)</small></span><time>18:46</time></button>
+                <button type="button" class="chat-preview" data-chat="mira" aria-pressed="false"><span class="mini-avatar avatar-m">M</span><span><strong data-i18n="mira">Мира</strong><small data-i18n="previewTwo">Кидай, сейчас послушаю</small></span><time>11:08</time></button>
+                <button type="button" class="chat-preview" data-chat="team" aria-pressed="false"><span class="mini-avatar bot">✦</span><span><strong data-i18n="team">Команда</strong><small data-i18n="previewThree">Супер, проверю вечером</small></span><time>09:32</time></button>
+              </div>
+              <div class="profile-pill"><span class="mini-avatar avatar-n">N</span><span><strong data-i18n="you">Вы</strong><small>@zephyron</small></span><span>↗</span></div>
+            </aside>
+            <section class="chat-panel" aria-label="Zephyron messenger preview">
+              <div class="chat-pattern" aria-hidden="true"></div>
+              <div class="chat-capsule"><span class="mini-avatar avatar-a" id="chat-avatar">A</span><span><strong id="chat-name">Алекс</strong><small><i></i><span data-i18n="online">в сети</span></small></span><span class="chat-info" aria-hidden="true">ⓘ</span></div>
+              <div class="mobile-chat-picker" role="group" aria-label="Демонстрационные диалоги"><button type="button" data-chat="alex" aria-pressed="true" data-i18n="alex">Алекс</button><button type="button" data-chat="mira" aria-pressed="false" data-i18n="mira">Мира</button><button type="button" data-chat="team" aria-pressed="false" data-i18n="team">Команда</button></div>
+              <div class="message-stream" id="demo-messages" role="log" aria-live="off"><span class="today" data-i18n="today">Сегодня</span><p class="demo-fallback" data-i18n="demoLabel">Демонстрационная переписка</p></div>
+              <div class="client-composer" aria-hidden="true"><span class="attach"><svg viewBox="0 0 24 24"><path d="m8 13 7-7a3 3 0 0 1 4 4l-9 9a5 5 0 0 1-7-7l9-9m-7 11 8-8"/></svg></span><span data-i18n="compose">Сообщение…</span><span class="composer-actions">☺</span><span class="mic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 11v1a6 6 0 0 0 12 0v-1M12 18v3m-3 0h6"/></svg></span></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="demo-toolbar"><span><i class="dot"></i><span data-i18n="tryChats">Выбери диалог — посмотри, как выглядит общение.</span></span><button id="demo-replay" type="button" data-i18n="replay">Повторить переписку ↻</button></div>
+      <div class="design-notes"><div><span>01 / FORM</span><h3 data-i18n="noteForm">Ничего острого.</h3><p data-i18n="noteFormText">Плавающие панели. Мягкие капсулы. Знакомый Zephyron.</p></div><div><span>02 / SPACE</span><h3 data-i18n="noteSpace">Место для разговора.</h3><p data-i18n="noteSpaceText">Интерфейс остаётся на фоне. Люди — на первом плане.</p></div><div><span>03 / EVERYDAY</span><h3 data-i18n="noteEveryday">Твой привычный экран.</h3><p data-i18n="noteEverydayText">Windows, macOS или Android — выбирай своё устройство.</p></div></div>
+    </section>
+    <section id="downloads" class="downloads" aria-labelledby="downloads-title">
+      <div class="section-index"><span>02</span><span data-i18n="devices">ТВОИ УСТРОЙСТВА</span></div>
+      <div class="section-heading"><h2 id="downloads-title" data-i18n="everywhere">Там, где ты.</h2><p data-i18n="choose">Три платформы. Один Zephyron.</p></div>
+      <div class="download-list frost">
+        <a class="download-row" href="./downloads.html?platform=Windows"><span class="row-number">01</span><svg class="os windows" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 5h11v10H3zm14 0h12v10H17zM3 18h11v10H3zm14 0h12v10H17z"/></svg><span class="row-name"><strong>Windows</strong><small data-i18n="pc">На большом экране</small></span><span class="row-action"><span data-i18n="get">Скачать</span><i aria-hidden="true">↗</i></span></a>
+        <a class="download-row" href="./downloads.html?platform=macOS"><span class="row-number">02</span><svg class="os" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="18" rx="3"/><path d="M11 28h10m-5-5v5"/></svg><span class="row-name"><strong>macOS</strong><small data-i18n="mac">В ритме твоего Mac</small></span><span class="row-action"><span data-i18n="get">Скачать</span><i aria-hidden="true">↗</i></span></a>
+        <a class="download-row" href="./downloads.html?platform=Android"><span class="row-number">03</span><svg class="os" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="2" width="16" height="28" rx="4"/><path d="M13 6h6m-4 20h2"/></svg><span class="row-name"><strong>Android</strong><small data-i18n="android">Всегда под рукой</small></span><span class="row-action"><span data-i18n="get">Скачать</span><i aria-hidden="true">↗</i></span></a>
+      </div>
+      <p class="download-note" data-i18n="pending">Windows уже доступен. Версии для macOS и Android добавим позже.</p>
+    </section>
+  </main>
+  <footer><a class="brand" href="#main"><span class="symbol-crop"><img class="theme-logo" src="./assets/zephyron-symbol-white.png" alt=""></span><span>Zephyron</span></a><span data-i18n="footer">Меньше шума. Больше общения.</span><span>© <span id="year">2026</span> Zephyron</span></footer>
+  <div class="toast frost" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

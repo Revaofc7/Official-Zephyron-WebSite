@@ -1,0 +1,5 @@
+Zephyron Dot Regular 1.0
+Original dot-matrix display font created for this Zephyron website.
+Latin and Cyrillic. Local WOFF file; no remote font services required.
+This is not a Nothing font or an official Nothing asset.
+You may use, modify and redistribute this original font with Zephyron.

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#09090b">
+  <link rel="icon" href="./assets/zephyron-symbol-white.png" type="image/png">
+  <meta name="description" content="Zephyron — мессенджер для Windows, macOS и Android.">
+  <title>Скачать Zephyron</title>
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('motion-ready');</script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <script src="./downloads.js" defer></script>
+</head>
+<body data-page="downloads">
+  <a class="skip" href="#main" data-i18n="skip">К содержимому</a>
+  <header class="header">
+    <nav class="nav frost" aria-label="Zephyron">
+      <a class="brand" href="./index.html" aria-label="Zephyron"><span class="symbol-crop"><img class="theme-logo" src="./assets/zephyron-symbol-white.png" alt=""></span><span>Zephyron</span></a>
+      <a class="nav-download" href="./downloads.html" data-i18n="get">Скачать</a>
+      <div class="controls"><button id="language" type="button" aria-label="Switch to English">EN</button><span class="divider"></span><button id="theme" type="button" aria-label="Светлая тема"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10Z"/></svg></button></div>
+    </nav>
+  </header>
+  <main id="main" class="subpage download-page">
+    <a class="back-home" href="./index.html"><span aria-hidden="true">←</span><span data-i18n="backHome">На главную</span></a>
+    <span class="tech-eyebrow">Z / DOWNLOAD / 001</span>
+    <h1 data-i18n="downloads">Скачать Zephyron</h1>
+    <p class="page-intro" data-i18n="downloadsIntro">Выбери свой экран. Остальное — Zephyron.</p>
+    <div class="platform-tabs download-tabs frost" role="group" aria-label="Выбор платформы">
+      <button type="button" data-download-platform="Windows" aria-pressed="true">Windows</button>
+      <button type="button" data-download-platform="macOS" aria-pressed="false">macOS</button>
+      <button type="button" data-download-platform="Android" aria-pressed="false">Android</button>
+    </div>
+    <section class="download-carousel" aria-label="Платформы Zephyron">
+      <div id="download-track" class="download-track" tabindex="0" aria-label="Выбор платформы" aria-describedby="download-help">
+        <article class="platform-card frost" data-download-card="Windows" aria-labelledby="platform-0">
+          <div class="platform-card-top"><span>01 / DESKTOP</span><span class="platform-device"><svg viewBox="0 0 32 32" class="windows" aria-hidden="true"><path d="M3 5h11v10H3zm14 0h12v10H17zM3 18h11v10H3zm14 0h12v10H17z"/></svg></span></div>
+          <div class="platform-art" aria-hidden="true"><span class="platform-orbit"></span><span class="platform-orbit platform-orbit-small"></span><span class="platform-app-icon"><img src="./assets/zephyron-symbol-white.png" alt=""></span><span class="platform-cross">＋</span></div>
+          <div class="platform-card-copy"><span class="platform-category" data-i18n="desktopClient">Для компьютера</span><h2 id="platform-0">Windows</h2><p data-i18n="windowsDescription"></p></div>
+        </article>
+        <article class="platform-card frost" data-download-card="macOS" aria-labelledby="platform-1">
+          <div class="platform-card-top"><span>02 / DESKTOP</span><span class="platform-device"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="18" rx="3"/><path d="M11 28h10m-5-5v5"/></svg></span></div>
+          <div class="platform-art" aria-hidden="true"><span class="platform-orbit"></span><span class="platform-orbit platform-orbit-small"></span><span class="platform-app-icon"><img src="./assets/zephyron-symbol-white.png" alt=""></span><span class="platform-cross">＋</span></div>
+          <div class="platform-card-copy"><span class="platform-category" data-i18n="desktopClient">Для компьютера</span><h2 id="platform-1">macOS</h2><p data-i18n="macDescription"></p></div>
+        </article>
+        <article class="platform-card frost" data-download-card="Android" aria-labelledby="platform-2">
+          <div class="platform-card-top"><span>03 / MOBILE</span><span class="platform-device"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="2" width="16" height="28" rx="4"/><path d="M13 6h6m-4 20h2"/></svg></span></div>
+          <div class="platform-art" aria-hidden="true"><span class="platform-orbit"></span><span class="platform-orbit platform-orbit-small"></span><span class="platform-app-icon"><img src="./assets/zephyron-symbol-white.png" alt=""></span><span class="platform-cross">＋</span></div>
+          <div class="platform-card-copy"><span class="platform-category" data-i18n="mobileClient">Для телефона</span><h2 id="platform-2">Android</h2><p data-i18n="androidDescription"></p></div>
+        </article>
+      </div>
+      <div class="carousel-navigation"><button id="download-prev" type="button" aria-label="Предыдущая платформа">←</button><span id="download-position" aria-live="polite">01 / 03 · Windows</span><button id="download-next" type="button" aria-label="Следующая платформа">→</button></div>
+    </section>
+    <p id="download-help" class="download-help" data-i18n="cardSwipe">Листай карточки или выбирай платформу сверху.</p>
+    <div class="download-action"><button id="platform-download" class="cta" type="button" aria-describedby="download-availability"><span id="platform-download-label">Скачать для Windows</span><span class="arrow" aria-hidden="true">↓</span></button><p id="download-availability" role="status">V26.0.1 · .EXE</p></div>
+    <section class="platform-install frost" aria-labelledby="install-heading">
+      <div class="install-top"><span>SETUP / <span id="install-number">01</span></span><span id="install-platform">Windows</span></div>
+      <h2 id="install-heading">Установка на Windows</h2>
+      <p id="platform-install-text">Установка в несколько шагов.</p>
+      <ol id="platform-install-steps" class="install-steps"><li>Скачай .exe-установщик Zephyron кнопкой выше.</li><li>Запусти скачанный .exe-файл.</li><li>Нажми «Далее».</li><li>Нажми «Продолжить».</li><li>Нажми «Окей» («Завершить установку»).</li></ol>
+    </section>
+  </main>
+  <footer><a class="brand" href="#main"><span class="symbol-crop"><img class="theme-logo" src="./assets/zephyron-symbol-white.png" alt=""></span><span>Zephyron</span></a><span data-i18n="footer">Меньше шума. Больше общения.</span><span>© <span id="year">2026</span> Zephyron</span></footer>
+  <div class="toast frost" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
