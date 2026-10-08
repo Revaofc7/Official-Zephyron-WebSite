@@ -19,6 +19,48 @@
   Object.assign(copy.en,{common:'General',techFilter:'Technology category',vpnOnly:'VPN only',bctDescription:'BCT is designed for use with a VPN. It helps reduce latency and keep the connection active for longer while the VPN is enabled.',bctNote:'The technology is not used without a VPN.',bctLatency:'Lower latency',bctStability:'A steadier connection',emptyPlatformTech:'No platform-specific technologies yet',emptyPlatformTechText:'Technologies for the selected platform will appear here. BCT is already described under General.'});
   Object.assign(copy.ru, {team:'Команда',previewOne:'Тогда до встречи :)',previewTwo:'Кидай, сейчас послушаю',previewThree:'Супер, проверю вечером',compose:'Сообщение…',demoLabel:'Демонстрационная переписка',tryChats:'Выбери диалог — посмотри, как выглядит общение.',replay:'Повторить переписку ↻',pause:'Остановить анимацию Ⅱ',noteForm:'Ничего острого.',noteFormText:'Плавающие панели. Мягкие капсулы. Знакомый Zephyron.',noteSpace:'Место для разговора.',noteSpaceText:'Интерфейс остаётся на фоне. Люди — на первом плане.',noteEveryday:'Твой привычный экран.',noteEverydayText:'Windows, macOS или Android — выбирай своё устройство.'});
   Object.assign(copy.en, {team:'Team',previewOne:'See you then :)',previewTwo:'Send it, I’ll listen now',previewThree:'Great, I’ll check tonight',compose:'Message…',demoLabel:'Illustrative conversation',tryChats:'Choose a conversation. Get a feel for Zephyron.',replay:'Replay conversation ↻',pause:'Stop animation Ⅱ',noteForm:'No sharp edges.',noteFormText:'Floating panels. Soft capsules. Familiar Zephyron.',noteSpace:'Room for a conversation.',noteSpaceText:'The interface stays in the background. People come first.',noteEveryday:'Your everyday screen.',noteEverydayText:'Windows, macOS or Android — choose your device.'});
+  Object.assign(copy.ru, {availableWindows:'Версия для Windows уже доступна',heroStatement:'Просто быть на связи.',heroDescription:'Мессенджер для разговоров без визуального шума — на компьютере и телефоне.',discover:'Узнать больше',heroBase:'WINDOWS · macOS · ANDROID',essentialsEyebrow:'ОСНОВЫ ZEPHYRON',essentialsTitle:'Спокойный снаружи. Продуманный внутри.',essentialsIntro:'Только то, что помогает оставаться на связи. Всё остальное отходит на второй план.',adaptiveTitle:'Один характер. Любой экран.',adaptiveText:'Интерфейс Zephyron адаптируется к разным размерам экрана и сохраняет знакомую логику на Windows, macOS и Android.',tlsTitle:'TLS защищает путь.',tlsText:'Данные между приложением и сервисом передаются через защищённое TLS-соединение. Это защита транспорта, без заявления о сквозном шифровании.',readPrivacy:'Подробнее о данных',bctHomeText:'BCT помогает уменьшать задержку и дольше удерживать соединение при включённом VPN.',viewTechnology:'О технологии',focusTitle:'Разговор — главный.',focusText:'Мягкое движение, спокойная типографика и минимум отвлекающих деталей.'});
+  Object.assign(copy.en, {availableWindows:'The Windows version is available now',heroStatement:'Simply stay connected.',heroDescription:'A messenger for conversations without visual noise — on desktop and mobile.',discover:'Discover more',heroBase:'WINDOWS · macOS · ANDROID',essentialsEyebrow:'ZEPHYRON ESSENTIALS',essentialsTitle:'Quiet on the surface. Considered underneath.',essentialsIntro:'Only what helps you stay connected. Everything else steps out of the way.',adaptiveTitle:'One character. Every screen.',adaptiveText:'Zephyron adapts to different screen sizes while keeping a familiar flow across Windows, macOS and Android.',tlsTitle:'TLS protects the journey.',tlsText:'Data travels between the app and service over a secured TLS connection. This is transport protection, not a claim of end-to-end encryption.',readPrivacy:'About your data',bctHomeText:'BCT helps reduce latency and maintain the connection for longer while a VPN is enabled.',viewTechnology:'Explore the technology',focusTitle:'Conversation comes first.',focusText:'Soft motion, calm typography and fewer details competing for attention.'});
+  Object.assign(copy.ru, {showcaseEyebrow:'ГАЛЕРЕЯ ИНТЕРФЕЙСА',showcaseTitle:'Zephyron в деталях.',showcaseIntro:'Здесь появятся настоящие снимки приложения: общение, профиль и интерфейс на разных устройствах.',shotDesktop:'Главное пространство общения',shotMobile:'Тот же характер. Меньше экран.',shotMoments:'Люди, сообщения, моменты.',futureShot:'Место для будущего снимка',galleryDesktop:'Компьютер',galleryMobile:'Телефон',galleryMoments:'Детали',showcaseNote:'Когда снимки будут готовы, мы заменим заглушки без изменения галереи.',previousImage:'Предыдущий снимок',nextImage:'Следующий снимок'});
+  Object.assign(copy.en, {showcaseEyebrow:'INTERFACE GALLERY',showcaseTitle:'Zephyron in detail.',showcaseIntro:'Real product images will live here: conversations, profiles and the interface across devices.',shotDesktop:'The main space for conversation',shotMobile:'The same character. A smaller screen.',shotMoments:'People, messages, moments.',futureShot:'Reserved for a future image',galleryDesktop:'Desktop',galleryMobile:'Mobile',galleryMoments:'Details',showcaseNote:'When the images are ready, we can replace the placeholders without rebuilding the gallery.',previousImage:'Previous image',nextImage:'Next image'});
+  Object.assign(copy.ru, {
+    releaseHome:'Frost Blur. Оптимизация. Блокировки.',
+    showcaseIntro:'Настоящий интерфейс Windows V26.0.2 — с новым эффектом Frost Blur. Скриншоты других платформ добавим позже.',
+    showcaseNote:'Windows · V26.0.2 · Frost Blur',
+    windowsScreenshotAlt:'Zephyron V26.0.2 для Windows: переписка и панели с эффектом Frost Blur',
+    platformScreenshotLater:'Скриншоты появятся позже.',
+    galleryPlatforms:'Скриншоты по платформам',
+    openWindowsScreenshot:'Открыть скриншот Windows ↗',
+    releaseEyebrow:'ОБНОВЛЕНИЕ ДЛЯ ПК',
+    releaseTitle:'Знакомый Zephyron. Новый Frost Blur.',
+    releaseIntro:'V26.0.2 — обновление Windows-клиента: переработанный интерфейс, оптимизация всей платформы и больше контроля над общением.',
+    releaseFrostTitle:'Frost Blur во всём приложении',
+    releaseFrostText:'Всё приложение переработано с эффектом Frost Blur. Матовое размытие, полупрозрачные панели и мягкие капсулы создают единый визуальный стиль.',
+    releasePerformanceTitle:'Оптимизация всей платформы',
+    releasePerformanceText:'Проведена комплексная оптимизация платформы Zephyron и работы приложения.',
+    releaseBlockingTitle:'Блокировка пользователей',
+    releaseBlockingText:'Добавлена возможность блокировать пользователей — больше контроля над своим кругом общения.',
+    releaseScreenshot:'Посмотреть новый интерфейс ↗'
+  });
+  Object.assign(copy.en, {
+    releaseHome:'Frost Blur. Optimization. User blocking.',
+    showcaseIntro:'The real Windows V26.0.2 interface, redesigned with Frost Blur. Screenshots for other platforms will follow.',
+    showcaseNote:'Windows · V26.0.2 · Frost Blur',
+    windowsScreenshotAlt:'Zephyron V26.0.2 for Windows: conversation and panels with the Frost Blur effect',
+    platformScreenshotLater:'Screenshots will be added later.',
+    galleryPlatforms:'Screenshots by platform',
+    openWindowsScreenshot:'Open the Windows screenshot ↗',
+    releaseEyebrow:'DESKTOP UPDATE',
+    releaseTitle:'Familiar Zephyron. New Frost Blur.',
+    releaseIntro:'V26.0.2 updates the Windows client with a redesigned interface, platform-wide optimization and more control over conversations.',
+    releaseFrostTitle:'Frost Blur throughout the app',
+    releaseFrostText:'The entire app has been redesigned with Frost Blur. Frosted surfaces, translucent panels and soft capsules bring a consistent visual style.',
+    releasePerformanceTitle:'Platform-wide optimization',
+    releasePerformanceText:'Comprehensive optimization of the Zephyron platform and application.',
+    releaseBlockingTitle:'User blocking',
+    releaseBlockingText:'You can now block users, giving you more control over who you connect with.',
+    releaseScreenshot:'See the new interface ↗'
+  });
   const conversations={
     alex:{avatar:'avatar-a',initial:'A',messages:[
       ['in','18:42','Ты сегодня во сколько заканчиваешь?','What time do you finish today?'],
@@ -150,9 +192,14 @@
     menu.querySelector('.menu-close').setAttribute('aria-label',copy[language].closeMenu);
     document.querySelector('.platform-tabs')?.setAttribute('aria-label',copy[language].platforms);
     document.querySelector('.tech-tabs')?.setAttribute('aria-label',copy[language].techFilter);
+    document.querySelectorAll('[data-i18n-aria]').forEach(el=>el.setAttribute('aria-label',copy[language][el.dataset.i18nAria]));
+    document.querySelectorAll('[data-i18n-alt]').forEach(el=>el.setAttribute('alt',copy[language][el.dataset.i18nAlt]));
+    document.getElementById('gallery-prev')?.setAttribute('aria-label',copy[language].previousImage);
+    document.getElementById('gallery-next')?.setAttribute('aria-label',copy[language].nextImage);
     document.querySelector('meta[name="description"]').content=language==='ru'?'Zephyron — мессенджер для Windows, macOS и Android.':'Zephyron — a messenger for Windows, macOS and Android.';
     renderConversation();
     renderTechnology();
+    renderChangelog();
     document.getElementById('orbit-canvas')?.setAttribute('aria-label',copy[language].gameCanvas);
     requestAnimationFrame(syncSelectors);
   }
@@ -162,9 +209,17 @@
   document.getElementById('year').textContent=new Date().getFullYear();
   const platformButtons=[...document.querySelectorAll('[data-log-platform]')];
   if(platformButtons.length){
-    const selectPlatform=(platform)=>{platformButtons.forEach(button=>{const selected=button.dataset.logPlatform===platform;button.setAttribute('aria-pressed',String(selected));});document.getElementById('selected-platform').textContent=platform;syncSelectors();animateContent(document.querySelector('.empty-state'));};
+    const selectPlatform=(platform)=>{platformButtons.forEach(button=>{const selected=button.dataset.logPlatform===platform;button.setAttribute('aria-pressed',String(selected));});document.getElementById('selected-platform').textContent=platform;renderChangelog();syncSelectors();animateContent(document.getElementById(platform==='Windows'?'windows-release':'log-empty'));};
     platformButtons.forEach(button=>button.addEventListener('click',()=>{selectPlatform(button.dataset.logPlatform);save('zephyron-log-platform',button.dataset.logPlatform);}));
-    const saved=read('zephyron-log-platform','Windows');selectPlatform(['Windows','macOS','Android'].includes(saved)?saved:'Windows');
+    const requested=new URL(location.href).searchParams.get('platform');
+    const saved=requested||read('zephyron-log-platform','Windows');selectPlatform(['Windows','macOS','Android'].includes(saved)?saved:'Windows');
+  }
+  function renderChangelog(){
+    const release=document.getElementById('windows-release');
+    const empty=document.getElementById('log-empty');
+    if(!release||!empty)return;
+    const windows=document.getElementById('selected-platform').textContent==='Windows';
+    release.hidden=!windows;empty.hidden=windows;
   }
   const techButtons=[...document.querySelectorAll('[data-tech-platform]')];
   const techCategories=['common','Windows','macOS','Android'];
@@ -181,6 +236,40 @@
     selectedTech=button.dataset.techPlatform;save('zephyron-tech-platform',selectedTech);
     renderTechnology();syncSelectors();animateContent(document.getElementById('tech-content'));
   }));
+  const galleryTrack=document.getElementById('gallery-track');
+  const galleryViewport=document.getElementById('gallery-viewport');
+  const galleryButtons=[...document.querySelectorAll('[data-gallery-index]')];
+  const gallerySlides=[...document.querySelectorAll('.gallery-slide')];
+  const galleryPrev=document.getElementById('gallery-prev');
+  const galleryNext=document.getElementById('gallery-next');
+  const galleryPosition=document.getElementById('gallery-position');
+  let galleryIndex=0;
+  function selectGallery(next,{focus=false}={}){
+    if(!galleryTrack||!gallerySlides.length)return;
+    galleryIndex=(next+gallerySlides.length)%gallerySlides.length;
+    galleryTrack.style.transform=`translate3d(-${galleryIndex*100}%,0,0)`;
+    galleryButtons.forEach((button,index)=>{const active=index===galleryIndex;button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;});
+    gallerySlides.forEach((slide,index)=>{const active=index===galleryIndex;slide.setAttribute('aria-hidden',String(!active));slide.inert=!active;});
+    if(galleryPosition)galleryPosition.textContent=String(galleryIndex+1).padStart(2,'0')+' / '+String(gallerySlides.length).padStart(2,'0');
+    if(focus)galleryButtons[galleryIndex]?.focus({preventScroll:true});
+  }
+  galleryButtons.forEach(button=>button.addEventListener('click',()=>selectGallery(Number(button.dataset.galleryIndex))));
+  galleryPrev?.addEventListener('click',()=>selectGallery(galleryIndex-1));
+  galleryNext?.addEventListener('click',()=>selectGallery(galleryIndex+1));
+  const galleryKeys=(event,focus=false)=>{
+    const next=event.key==='ArrowLeft'?galleryIndex-1:event.key==='ArrowRight'?galleryIndex+1:event.key==='Home'?0:event.key==='End'?gallerySlides.length-1:null;
+    if(next===null)return;
+    event.preventDefault();selectGallery(next,{focus});
+  };
+  galleryViewport?.addEventListener('keydown',event=>galleryKeys(event));
+  document.querySelector('.gallery-tabs')?.addEventListener('keydown',event=>galleryKeys(event,true));
+  if(galleryViewport){
+    let galleryDrag=null;
+    galleryViewport.addEventListener('pointerdown',event=>{if(!event.isPrimary||event.button!==0)return;galleryDrag={id:event.pointerId,x:event.clientX,y:event.clientY};galleryViewport.setPointerCapture?.(event.pointerId);galleryViewport.classList.add('is-dragging');});
+    galleryViewport.addEventListener('pointerup',event=>{if(!galleryDrag||galleryDrag.id!==event.pointerId)return;const dx=event.clientX-galleryDrag.x;const dy=event.clientY-galleryDrag.y;galleryViewport.classList.remove('is-dragging');galleryViewport.releasePointerCapture?.(event.pointerId);galleryDrag=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy))selectGallery(galleryIndex+(dx<0?1:-1));});
+    galleryViewport.addEventListener('pointercancel',()=>{galleryDrag=null;galleryViewport.classList.remove('is-dragging');});
+  }
+  selectGallery(0);
   render();
   if(messageLog){
     document.querySelectorAll('[data-chat]').forEach(button=>button.addEventListener('click',()=>{selectedChat=button.dataset.chat;renderConversation();syncSelectors();animateContent(messageLog);}));
@@ -200,8 +289,32 @@
       }};
       entry.target.addEventListener('transitionend',cleanup);
     }}),{threshold:.12});
-    document.querySelectorAll('.design-notes>div,.section-heading,.product-heading,.headline,.intro,.subpage>h1,.page-intro,.empty-state h2,.empty-state p,.technology-card h2,.technology-card p').forEach(el=>{el.classList.add('reveal-ready');revealObserver.observe(el);});
+    document.querySelectorAll('.editorial-heading,.feature-card,.gallery-viewport,.gallery-controls,.showcase-note,.design-notes>div,.section-heading,.product-heading,.headline,.intro,.subpage>h1,.page-intro,.empty-state h2,.empty-state p,.technology-card h2,.technology-card p').forEach(el=>{el.classList.add('reveal-ready');revealObserver.observe(el);});
   }
+  const fineMotion=matchMedia('(pointer:fine) and (min-width:801px)');
+  let pointerFrame=0;
+  document.addEventListener('pointermove',event=>{
+    if(!fineMotion.matches||reducedMotion.matches)return;
+    if(pointerFrame)return;
+    pointerFrame=requestAnimationFrame(()=>{
+      pointerFrame=0;
+      const x=(event.clientX-innerWidth/2)*.012;
+      const y=(event.clientY-innerHeight/2)*.012;
+      document.documentElement.style.setProperty('--parallax-x',x.toFixed(2)+'px');
+      document.documentElement.style.setProperty('--parallax-y',y.toFixed(2)+'px');
+    });
+  },{passive:true});
+  document.querySelectorAll('.feature-card,.gallery-controls').forEach(card=>card.addEventListener('pointermove',event=>{
+    if(!fineMotion.matches||reducedMotion.matches)return;
+    const rect=card.getBoundingClientRect();
+    card.style.setProperty('--spot-x',(event.clientX-rect.left)+'px');
+    card.style.setProperty('--spot-y',(event.clientY-rect.top)+'px');
+  },{passive:true}));
+  const header=document.querySelector('.header');
+  let scrollFrame=0;
+  const syncHeader=()=>{scrollFrame=0;header?.classList.toggle('is-scrolled',scrollY>36);};
+  addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(syncHeader);},{passive:true});
+  syncHeader();
   // Sliding glass lenses, measured again after language changes and resizing.
   function syncSelectors(){
     document.querySelectorAll('.platform-tabs,.mobile-chat-picker,.chat-list').forEach(group=>{

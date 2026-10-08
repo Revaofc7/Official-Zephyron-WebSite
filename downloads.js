@@ -10,7 +10,7 @@
   const instructions=document.getElementById('platform-install-text'),toast=document.getElementById('toast');
   // A direct Windows asset URL can replace API discovery when supplied.
   const installers={Windows:'',macOS:'',Android:''};
-  const windowsRelease='https://api.github.com/repos/Revaofc7/zephyron-downloads/releases/tags/V26.0.1';
+  const windowsRelease='https://api.github.com/repos/Revaofc7/zephyron-downloads/releases/tags/V26.0.2';
   const windowsSteps={
     ru:['Скачай .exe-установщик Zephyron кнопкой выше.','Запусти скачанный .exe-файл.','Нажми «Далее».','Нажми «Продолжить».','Нажми «Окей» («Завершить установку»).'],
     en:['Download the Zephyron .exe installer using the button above.','Run the downloaded .exe file.','Click “Next”.','Click “Continue”.','Click “OK” (“Finish installation”).']
@@ -31,7 +31,7 @@
           const assets=(release.assets||[]).filter(asset=>/\.exe$/i.test(asset.name||''));
           if(assets.length!==1)throw new Error('Expected one installer');
           const url=new URL(assets[0].browser_download_url);
-          if(url.protocol!=='https:'||url.hostname!=='github.com'||!url.pathname.startsWith('/Revaofc7/zephyron-downloads/releases/download/V26.0.1/'))throw new Error('Unexpected installer URL');
+          if(url.protocol!=='https:'||url.hostname!=='github.com'||!url.pathname.startsWith('/Revaofc7/zephyron-downloads/releases/download/V26.0.2/'))throw new Error('Unexpected installer URL');
           return url.href;
         }finally{clearTimeout(timeout);}
       })().catch(error=>{windowsAssetPromise=null;throw error;});
@@ -60,7 +60,7 @@
     position.textContent=String(index+1).padStart(2,'0')+' / 03 · '+p;
     label.textContent=downloadBusy?(en?'Preparing download…':'Подготовка загрузки…'):(en?'Download for ':'Скачать для ')+p;
     action.disabled=downloadBusy;
-    availability.textContent=p==='Windows'?'V26.0.1 · .EXE':(en?'The installer link will be added later.':'Ссылку на установщик добавим позже.');
+    availability.textContent=p==='Windows'?'V26.0.2 · .EXE':(en?'The installer link will be added later.':'Ссылку на установщик добавим позже.');
     heading.textContent=(en?'Install on ':'Установка на ')+p;
     instructions.textContent=installation[p][language()];
     steps.replaceChildren();

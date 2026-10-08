@@ -9,8 +9,8 @@
   <meta name="description" content="Zephyron — мессенджер для Windows, macOS и Android.">
   <title>Zephyron — На одной волне</title>
   <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('motion-ready');</script>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=26.0.2">
+  <script src="./script.js?v=26.0.2" defer></script>
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">К содержимому</a>
@@ -25,25 +25,50 @@
   <main id="main">
     <section class="hero" aria-labelledby="title">
       <div class="hero-shell">
-        <div class="hero-meta"><span><i class="dot"></i><span data-i18n="eyebrow">Твоё пространство общения</span></span><span>PRIVATE PREVIEW&nbsp;&nbsp;/&nbsp;&nbsp;2026</span></div>
+        <div class="hero-meta"><span><i class="dot"></i><span data-i18n="eyebrow">Твоё пространство общения</span></span><span>ZEPHYRON&nbsp;&nbsp;/&nbsp;&nbsp;2026</span></div>
         <div class="hero-grid">
           <div class="hero-copy">
+            <div class="hero-status"><i></i><span data-i18n="availableWindows">Версия для Windows уже доступна</span></div>
             <h1 id="title" class="wordmark"><img class="theme-logo" src="./assets/zephyron-wordmark-white.png" alt="Zephyron" width="1536" height="1024"></h1>
-            <p class="headline" data-i18n="headline">На одной волне.</p>
-            <p class="intro" data-i18n="intro">Ближе к своим. Дальше от лишнего.</p>
-            <div class="hero-actions"><a class="cta" href="./downloads.html"><span data-i18n="download">Скачать Zephyron</span><span class="arrow" aria-hidden="true">↗</span></a><span class="platform-line">Windows&nbsp;&nbsp; / &nbsp;&nbsp;macOS&nbsp;&nbsp; / &nbsp;&nbsp;Android</span></div>
+            <p class="headline" data-i18n="heroStatement">Просто быть на связи.</p>
+            <p class="intro hero-intro" data-i18n="heroDescription">Мессенджер для разговоров без визуального шума — на компьютере и телефоне.</p>
+            <a class="release-link" href="./changelog.html?platform=Windows"><span class="release-link-version">V26.0.2</span><span data-i18n="releaseHome">Frost Blur. Оптимизация. Блокировки.</span><span aria-hidden="true">↗</span></a>
+            <div class="hero-actions"><a class="cta" href="./downloads.html"><span data-i18n="download">Скачать Zephyron</span><span class="arrow" aria-hidden="true">↗</span></a><a class="quiet-link" href="#essentials"><span data-i18n="discover">Узнать больше</span><span aria-hidden="true">↓</span></a></div>
           </div>
           <div class="eclipse-scene" aria-hidden="true">
             <div class="eclipse-grid"></div><div class="eclipse-ring ring-outer"></div><div class="eclipse-ring ring-inner"></div><div class="eclipse-corona"></div>
             <div class="eclipse-disc"><img src="./assets/zephyron-symbol-white.png" alt="" width="1254" height="1254"></div><div class="eclipse-flare"></div>
-            <span class="eclipse-coordinate coordinate-left">Z / 01</span><span class="eclipse-coordinate coordinate-right">SIGNAL LOCKED</span>
+            <span class="eclipse-coordinate coordinate-left">Z / 01</span><span class="eclipse-coordinate coordinate-right">SIGNAL / ACTIVE</span>
           </div>
         </div>
-        <div class="hero-base"><span>01</span><span data-i18n="bubbleOne">Всегда рядом</span><span class="hero-rule"></span><a href="#product" aria-label="Scroll to product">↓</a></div>
+        <div class="hero-base"><span>01</span><span data-i18n="heroBase">WINDOWS · macOS · ANDROID</span><span class="hero-rule"></span><a href="#essentials" aria-label="Scroll to features">↓</a></div>
+      </div>
+    </section>
+    <section id="essentials" class="essentials" aria-labelledby="essentials-title">
+      <div class="section-index"><span>01</span><span data-i18n="essentialsEyebrow">ОСНОВЫ ZEPHYRON</span></div>
+      <div class="editorial-heading"><h2 id="essentials-title" data-i18n="essentialsTitle">Спокойный снаружи.<br>Продуманный внутри.</h2><p data-i18n="essentialsIntro">Только то, что помогает оставаться на связи. Всё остальное отходит на второй план.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-devices">
+          <div class="feature-copy"><span class="feature-kicker">01 / ADAPTIVE</span><h3 data-i18n="adaptiveTitle">Один характер.<br>Любой экран.</h3><p data-i18n="adaptiveText">Интерфейс Zephyron адаптируется к разным размерам экрана и сохраняет знакомую логику на Windows, macOS и Android.</p></div>
+          <div class="device-family" aria-hidden="true"><span class="device desktop-device"><i></i></span><span class="device tablet-device"><i></i></span><span class="device phone-device"><i></i></span><span class="device-signal"></span></div>
+          <div class="feature-foot"><span>WINDOWS</span><span>macOS</span><span>ANDROID</span></div>
+        </article>
+        <article class="feature-card feature-security">
+          <div class="security-orbit" aria-hidden="true"><span></span><i></i><b></b></div>
+          <div class="feature-copy"><span class="feature-kicker">02 / TRANSPORT</span><h3 data-i18n="tlsTitle">TLS защищает путь.</h3><p data-i18n="tlsText">Данные между приложением и сервисом передаются через защищённое TLS-соединение. Это защита транспорта, без заявления о сквозном шифровании.</p><a href="./privacy.html"><span data-i18n="readPrivacy">Подробнее о данных</span><span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="feature-card feature-bct">
+          <div class="feature-copy"><span class="feature-kicker">03 / BCT</span><h3>Bypass Connection<br>Technology</h3><p data-i18n="bctHomeText">BCT помогает уменьшать задержку и дольше удерживать соединение при включённом VPN.</p><a href="./technologies.html"><span data-i18n="viewTechnology">О технологии</span><span aria-hidden="true">↗</span></a></div>
+          <div class="route-visual" aria-hidden="true"><span>Z</span><i></i><span>VPN</span><i></i><span>↗</span></div>
+        </article>
+        <article class="feature-card feature-human">
+          <div class="human-mark" aria-hidden="true"><img src="./assets/zephyron-symbol-white.png" alt=""></div>
+          <div class="feature-copy"><span class="feature-kicker">04 / FOCUS</span><h3 data-i18n="focusTitle">Разговор — главный.</h3><p data-i18n="focusText">Мягкое движение, спокойная типографика и минимум отвлекающих деталей.</p></div>
+        </article>
       </div>
     </section>
     <section id="product" class="product" aria-labelledby="product-title">
-      <div class="section-index"><span>01</span><span data-i18n="concept">Визуальный концепт интерфейса</span></div>
+      <div class="section-index"><span>02</span><span data-i18n="concept">Визуальный концепт интерфейса</span></div>
       <div class="product-heading"><h2 id="product-title" data-i18n="bubbleTwo">Всё начинается с «привет»</h2><p data-i18n="intro">Ближе к своим. Дальше от лишнего.</p></div>
       <div class="product-stage">
         <div class="stage-orbit" aria-hidden="true"></div>
@@ -75,8 +100,43 @@
       <div class="demo-toolbar"><span><i class="dot"></i><span data-i18n="tryChats">Выбери диалог — посмотри, как выглядит общение.</span></span><button id="demo-replay" type="button" data-i18n="replay">Повторить переписку ↻</button></div>
       <div class="design-notes"><div><span>01 / FORM</span><h3 data-i18n="noteForm">Ничего острого.</h3><p data-i18n="noteFormText">Плавающие панели. Мягкие капсулы. Знакомый Zephyron.</p></div><div><span>02 / SPACE</span><h3 data-i18n="noteSpace">Место для разговора.</h3><p data-i18n="noteSpaceText">Интерфейс остаётся на фоне. Люди — на первом плане.</p></div><div><span>03 / EVERYDAY</span><h3 data-i18n="noteEveryday">Твой привычный экран.</h3><p data-i18n="noteEverydayText">Windows, macOS или Android — выбирай своё устройство.</p></div></div>
     </section>
+    <section id="showcase" class="showcase" aria-labelledby="showcase-title">
+      <div class="section-index"><span>03</span><span data-i18n="showcaseEyebrow">ГАЛЕРЕЯ ИНТЕРФЕЙСА</span></div>
+      <div class="editorial-heading showcase-heading"><h2 id="showcase-title" data-i18n="showcaseTitle">Zephyron в деталях.</h2><p data-i18n="showcaseIntro">Настоящий интерфейс Windows V26.0.2 — с новым эффектом Frost Blur. Скриншоты других платформ добавим позже.</p></div>
+      <div class="showcase-viewer">
+        <div class="gallery-ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="gallery-viewport" id="gallery-viewport" tabindex="0" aria-roledescription="carousel" data-i18n-aria="showcaseTitle">
+          <div class="gallery-track" id="gallery-track">
+            <article class="gallery-slide screenshot-slide" id="gallery-panel-windows" role="tabpanel" aria-labelledby="gallery-tab-windows">
+              <img src="./assets/zephyron-windows-v26.0.2.jpg" width="1915" height="998" loading="lazy" decoding="async" alt="Zephyron V26.0.2 для Windows: переписка и панели с эффектом Frost Blur" data-i18n-alt="windowsScreenshotAlt" draggable="false">
+            </article>
+            <article class="gallery-slide" id="gallery-panel-macos" role="tabpanel" aria-labelledby="gallery-tab-macos" aria-hidden="true" inert>
+              <div class="shot-placeholder platform-shot-empty">
+                <span class="placeholder-index" aria-hidden="true">02 / macOS</span>
+                <div><span class="placeholder-platform">macOS</span><p data-i18n="platformScreenshotLater">Скриншоты появятся позже.</p></div>
+              </div>
+            </article>
+            <article class="gallery-slide" id="gallery-panel-android" role="tabpanel" aria-labelledby="gallery-tab-android" aria-hidden="true" inert>
+              <div class="shot-placeholder platform-shot-empty">
+                <span class="placeholder-index" aria-hidden="true">03 / ANDROID</span>
+                <div><span class="placeholder-platform">Android</span><p data-i18n="platformScreenshotLater">Скриншоты появятся позже.</p></div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="gallery-controls glass-blur">
+          <div class="gallery-tabs" role="tablist" data-i18n-aria="galleryPlatforms" aria-label="Скриншоты по платформам">
+            <button type="button" role="tab" id="gallery-tab-windows" aria-controls="gallery-panel-windows" data-gallery-index="0" aria-selected="true">Windows</button>
+            <button type="button" role="tab" id="gallery-tab-macos" aria-controls="gallery-panel-macos" data-gallery-index="1" aria-selected="false" tabindex="-1">macOS</button>
+            <button type="button" role="tab" id="gallery-tab-android" aria-controls="gallery-panel-android" data-gallery-index="2" aria-selected="false" tabindex="-1">Android</button>
+          </div>
+          <div class="gallery-nav"><span id="gallery-position">01 / 03</span><button id="gallery-prev" type="button" aria-label="Previous image">←</button><button id="gallery-next" type="button" aria-label="Next image">→</button></div>
+        </div>
+      </div>
+      <div class="showcase-details"><p class="showcase-note"><i class="dot"></i><span data-i18n="showcaseNote">Windows · V26.0.2 · Frost Blur</span></p><a class="screenshot-original" href="./assets/zephyron-windows-v26.0.2.jpg" target="_blank" rel="noopener" data-i18n="openWindowsScreenshot">Открыть скриншот Windows ↗</a></div>
+    </section>
     <section id="downloads" class="downloads" aria-labelledby="downloads-title">
-      <div class="section-index"><span>02</span><span data-i18n="devices">ТВОИ УСТРОЙСТВА</span></div>
+      <div class="section-index"><span>04</span><span data-i18n="devices">ТВОИ УСТРОЙСТВА</span></div>
       <div class="section-heading"><h2 id="downloads-title" data-i18n="everywhere">Там, где ты.</h2><p data-i18n="choose">Три платформы. Один Zephyron.</p></div>
       <div class="download-list frost">
         <a class="download-row" href="./downloads.html?platform=Windows"><span class="row-number">01</span><svg class="os windows" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 5h11v10H3zm14 0h12v10H17zM3 18h11v10H3zm14 0h12v10H17z"/></svg><span class="row-name"><strong>Windows</strong><small data-i18n="pc">На большом экране</small></span><span class="row-action"><span data-i18n="get">Скачать</span><i aria-hidden="true">↗</i></span></a>

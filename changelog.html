@@ -9,8 +9,8 @@
   <meta name="description" content="Zephyron — мессенджер для Windows, macOS и Android.">
   <title>Список изменений — Zephyron</title>
   <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('motion-ready');</script>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=26.0.2">
+  <script src="./script.js?v=26.0.2" defer></script>
 </head>
 <body data-page="changelog">
   <a class="skip" href="#main" data-i18n="skip">К содержимому</a>
@@ -22,7 +22,33 @@
       <div class="controls"><button id="language" type="button" aria-label="Switch to English">EN</button><span class="divider"></span><button id="theme" type="button" aria-label="Светлая тема"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10Z"/></svg></button></div>
     </nav>
   </header>
-  <main id="main" class="subpage"><a class="back-home" href="./index.html"><span aria-hidden="true">←</span><span data-i18n="backHome">На главную</span></a><h1 data-i18n="changelog">Список изменений</h1><p class="page-intro" data-i18n="changelogIntro"></p><div class="platform-tabs frost" role="group" aria-label="Выберите платформу"><button type="button" data-log-platform="Windows" aria-pressed="true">Windows</button><button type="button" data-log-platform="macOS" aria-pressed="false">macOS</button><button type="button" data-log-platform="Android" aria-pressed="false">Android</button></div><section class="empty-state frost" aria-labelledby="empty-heading"><div class="empty-mark" aria-hidden="true">↻</div><span class="selected-platform" id="selected-platform" aria-live="polite">Windows</span><h2 id="empty-heading" data-i18n="emptyLog"></h2><p data-i18n="emptyLogText"></p></section></main>
+  <main id="main" class="subpage changelog-page">
+    <a class="back-home" href="./index.html"><span aria-hidden="true">←</span><span data-i18n="backHome">На главную</span></a>
+    <h1 data-i18n="changelog">Список изменений</h1>
+    <p class="page-intro" data-i18n="changelogIntro">Что нового в Zephyron — для каждого устройства.</p>
+    <div class="platform-tabs frost" role="group" aria-label="Выберите платформу">
+      <button type="button" data-log-platform="Windows" aria-pressed="true">Windows</button>
+      <button type="button" data-log-platform="macOS" aria-pressed="false">macOS</button>
+      <button type="button" data-log-platform="Android" aria-pressed="false">Android</button>
+    </div>
+    <span class="release-platform-label" id="selected-platform" aria-live="polite">Windows</span>
+    <article class="release-card frost" id="windows-release" aria-labelledby="release-title">
+      <div class="release-card-meta"><span data-i18n="releaseEyebrow">ОБНОВЛЕНИЕ ДЛЯ ПК</span><span class="release-version">V26.0.2</span></div>
+      <h2 id="release-title" data-i18n="releaseTitle">Знакомый Zephyron. Новый Frost Blur.</h2>
+      <p class="release-intro" data-i18n="releaseIntro">V26.0.2 — обновление Windows-клиента: переработанный интерфейс, оптимизация всей платформы и больше контроля над общением.</p>
+      <ol class="release-features">
+        <li><span aria-hidden="true">01</span><div><h3 data-i18n="releaseFrostTitle">Frost Blur во всём приложении</h3><p data-i18n="releaseFrostText">Всё приложение переработано с эффектом Frost Blur. Матовое размытие, полупрозрачные панели и мягкие капсулы создают единый визуальный стиль.</p></div></li>
+        <li><span aria-hidden="true">02</span><div><h3 data-i18n="releasePerformanceTitle">Оптимизация всей платформы</h3><p data-i18n="releasePerformanceText">Проведена комплексная оптимизация платформы Zephyron и работы приложения.</p></div></li>
+        <li><span aria-hidden="true">03</span><div><h3 data-i18n="releaseBlockingTitle">Блокировка пользователей</h3><p data-i18n="releaseBlockingText">Добавлена возможность блокировать пользователей — больше контроля над своим кругом общения.</p></div></li>
+      </ol>
+      <a class="release-screenshot-link" href="./index.html#showcase" data-i18n="releaseScreenshot">Посмотреть новый интерфейс ↗</a>
+    </article>
+    <section class="empty-state frost" id="log-empty" aria-labelledby="empty-heading" hidden>
+      <div class="empty-mark" aria-hidden="true">↻</div>
+      <h2 id="empty-heading" data-i18n="emptyLog">Здесь появятся обновления</h2>
+      <p data-i18n="emptyLogText">История версий для выбранной платформы пока не опубликована.</p>
+    </section>
+  </main>
   <footer><a class="brand" href="#main"><span class="symbol-crop"><img class="theme-logo" src="./assets/zephyron-symbol-white.png" alt=""></span><span>Zephyron</span></a><span data-i18n="footer">Меньше шума. Больше общения.</span><span>© <span id="year">2026</span> Zephyron</span></footer>
   <div class="toast frost" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 </body>
