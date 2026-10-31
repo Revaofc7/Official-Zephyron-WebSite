@@ -9,11 +9,15 @@
   const position=document.getElementById('download-position'),heading=document.getElementById('install-heading');
   const instructions=document.getElementById('platform-install-text'),toast=document.getElementById('toast');
   // A direct Windows asset URL can replace API discovery when supplied.
-  const installers={Windows:'',macOS:'',Android:''};
+  const installers={Windows:'',macOS:'',Android:'https://github.com/Revaofc7/zephyron-downloads/releases/download/V26.0.2_Mobile/zephyron_V26.0.2.apk'};
   const windowsRelease='https://api.github.com/repos/Revaofc7/zephyron-downloads/releases/tags/V26.0.2';
   const windowsSteps={
     ru:['Скачай .exe-установщик Zephyron кнопкой выше.','Запусти скачанный .exe-файл.','Нажми «Далее».','Нажми «Продолжить».','Нажми «Окей» («Завершить установку»).'],
     en:['Download the Zephyron .exe installer using the button above.','Run the downloaded .exe file.','Click “Next”.','Click “Continue”.','Click “OK” (“Finish installation”).']
+  };
+  const androidSteps={
+    ru:['Нажми «Скачать для Android» — загрузится zephyron_V26.0.2.apk (около 52,3 МБ).','Открой скачанный APK в загрузках браузера или приложении «Файлы».','Если Android запросит разрешение, открой настройки и разреши установку из этого источника для браузера или приложения «Файлы».','Вернись к APK и нажми «Установить». Если Zephyron уже установлен, выбери обновление — удалять приложение не нужно.','После установки открой Zephyron. Разрешение на установку из этого источника можно снова выключить.'],
+    en:['Click “Download for Android” to get zephyron_V26.0.2.apk (about 52.3 MB).','Open the APK from your browser downloads or Files app.','If Android asks, open Settings and allow installation from this source for your browser or Files app.','Return to the APK and tap “Install”. If Zephyron is already installed, update it without uninstalling.','Open Zephyron after installation. You can turn off permission to install from this source afterwards.']
   };
   const steps=document.getElementById('platform-install-steps');
   const availability=document.getElementById('download-availability');
@@ -41,7 +45,7 @@
   const installation={
     Windows:{ru:'Установка в несколько шагов.',en:'Install in a few steps.'},
     macOS:{ru:'Здесь появится инструкция установки Zephyron на macOS.',en:'Instructions for installing Zephyron on macOS will appear here.'},
-    Android:{ru:'Здесь появится инструкция установки Zephyron на Android.',en:'Instructions for installing Zephyron on Android will appear here.'}
+    Android:{ru:'Zephyron V26.0.2 для Android. Скачай APK и установи его на телефон. Если обновление не устанавливается, сохрани приложение и сообщи нам текст ошибки.',en:'Zephyron V26.0.2 for Android. Download the APK and install it on your phone. If an update fails, keep the installed app and report the error to us.'}
   };
   const motion=matchMedia('(prefers-reduced-motion: reduce)');
   let saved='Windows';try{saved=localStorage.getItem('zephyron-download-platform')||saved;}catch{}
@@ -60,12 +64,12 @@
     position.textContent=String(index+1).padStart(2,'0')+' / 03 · '+p;
     label.textContent=downloadBusy?(en?'Preparing download…':'Подготовка загрузки…'):(en?'Download for ':'Скачать для ')+p;
     action.disabled=downloadBusy;
-    availability.textContent=p==='Windows'?'V26.0.2 · .EXE':(en?'The installer link will be added later.':'Ссылку на установщик добавим позже.');
+    availability.textContent=p==='Windows'?'V26.0.2 · .EXE':p==='Android'?'V26.0.2 · APK · 52.3 MB':(en?'The installer link will be added later.':'Ссылку на установщик добавим позже.');
     heading.textContent=(en?'Install on ':'Установка на ')+p;
     instructions.textContent=installation[p][language()];
     steps.replaceChildren();
-    steps.hidden=p!=='Windows';
-    if(p==='Windows')windowsSteps[language()].forEach(step=>{const li=document.createElement('li');li.textContent=step;steps.append(li);});
+    steps.hidden=p!=='Windows'&&p!=='Android';
+    if(!steps.hidden)(p==='Android'?androidSteps:windowsSteps)[language()].forEach(step=>{const li=document.createElement('li');li.textContent=step;steps.append(li);});
     document.getElementById('install-number').textContent=String(index+1).padStart(2,'0');
     document.getElementById('install-platform').textContent=p;
     action.setAttribute('aria-describedby','download-availability');
