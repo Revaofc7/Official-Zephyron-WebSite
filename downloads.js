@@ -9,7 +9,7 @@
   const position=document.getElementById('download-position'),heading=document.getElementById('install-heading');
   const instructions=document.getElementById('platform-install-text'),toast=document.getElementById('toast');
   // A direct Windows asset URL can replace API discovery when supplied.
-  const installers={Windows:'',macOS:'',Android:'https://github.com/Revaofc7/zephyron-downloads/releases/download/V26.0.2_Mobile/zephyron_V26.0.2.apk'};
+  const installers={Windows:'',macOS:'',Android:'https://github.com/Revaofc7/zephyron-downloads/releases/download/V26.0.2_Mobile/zephyron_android_V26.0.2.apk'};
   const windowsRelease='https://api.github.com/repos/Revaofc7/zephyron-downloads/releases/tags/V26.0.2';
   const windowsSteps={
     ru:['Скачай .exe-установщик Zephyron кнопкой выше.','Запусти скачанный .exe-файл.','Нажми «Далее».','Нажми «Продолжить».','Нажми «Окей» («Завершить установку»).'],
