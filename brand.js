@@ -1,0 +1,12 @@
+/* CSS motion runs only while the mark is visible. Light waves are finite. */
+(()=>{'use strict';const stage=document.querySelector('.brand-stage');if(!stage)return;
+ const root=document.documentElement,reduced=matchMedia('(prefers-reduced-motion: reduce)'),button=document.querySelector('[data-brand-pulse]'),toggle=document.querySelector('#motion-toggle'),waves=new Set();
+ let visible=false,paused=root.dataset.motion==='off',lastPulse=-450;
+ const en=()=>root.lang==='en',text=(ru,eng)=>en()?eng:ru;
+ function stopWaves(){waves.forEach(a=>a.cancel());waves.clear();stage.querySelector('.brand-pulses').replaceChildren()}
+ function sync(){const active=visible&&!document.hidden&&!paused&&!reduced.matches;stage.classList.toggle('is-awake',active);root.dataset.motion=paused?'off':'on';root.classList.toggle('has-user-pause',paused||reduced.matches);toggle.setAttribute('aria-pressed',String(paused));toggle.setAttribute('aria-label',paused?text('Включить движение','Enable motion'):text('Уменьшить движение','Reduce motion'));toggle.innerHTML=window.ZephyronIcons.svg(paused?'play':'pause');button.disabled=paused||reduced.matches;if(!active)stopWaves()}
+ button.addEventListener('click',()=>{if(paused||reduced.matches||document.hidden||!button.animate)return;const now=performance.now();if(now-lastPulse<450)return;lastPulse=now;stopWaves();for(let i=0;i<3;i++){const ring=document.createElement('span');ring.className='brand-pulse';stage.querySelector('.brand-pulses').append(ring);const a=ring.animate([{opacity:.7,transform:'translate(-50%,-50%) scale(1)'},{opacity:0,transform:'translate(-50%,-50%) scale('+(2.05+i*.23)+')'}],{duration:1150+i*140,delay:i*95,easing:'cubic-bezier(.15,.65,.25,1)',fill:'both'});waves.add(a);const done=()=>{waves.delete(a);ring.remove()};a.finished.then(done,done)}});
+ toggle.addEventListener('click',()=>{paused=!paused;try{localStorage.setItem('zephyron-motion',paused?'off':'on')}catch{}sync()});
+ if('IntersectionObserver'in window)new IntersectionObserver(entries=>{visible=entries.some(e=>e.isIntersecting);sync()},{threshold:.1}).observe(stage);else visible=true;
+ document.addEventListener('visibilitychange',sync);document.addEventListener('zephyron-ui-change',sync);reduced.addEventListener?.('change',sync);window.addEventListener('pagehide',()=>{visible=false;sync()});window.addEventListener('pageshow',()=>{const r=stage.getBoundingClientRect();visible=r.bottom>0&&r.top<innerHeight;sync()});sync();
+})();

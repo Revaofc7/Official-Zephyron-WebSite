@@ -48,9 +48,9 @@
     Android:{ru:'Zephyron V26.0.2 для Android. Скачай APK и установи его на телефон. Если обновление не устанавливается, сохрани приложение и сообщи нам текст ошибки.',en:'Zephyron V26.0.2 for Android. Download the APK and install it on your phone. If an update fails, keep the installed app and report the error to us.'}
   };
   const motion=matchMedia('(prefers-reduced-motion: reduce)');
-  let saved='Windows';try{saved=localStorage.getItem('zephyron-download-platform')||saved;}catch{}
+  let saved='';try{saved=localStorage.getItem('zephyron-download-platform')||'';}catch{}
   const requested=new URL(location.href).searchParams.get('platform');
-  let index=platforms.indexOf(platforms.includes(requested)?requested:saved);if(index<0)index=0;
+  let index=platforms.indexOf(window.ZephyronDevice?.choose(requested,saved,window.ZephyronDevice?.current)||'Windows');
   let drag=null,programmatic=false,scrollTimer=0,toastTimer=0,resizeFrame=0;
   const language=()=>document.documentElement.lang==='en'?'en':'ru';
   function sync(){
@@ -63,7 +63,9 @@
     track.closest('section').setAttribute('aria-label',en?'Zephyron platforms':'Платформы Zephyron');
     position.textContent=String(index+1).padStart(2,'0')+' / 03 · '+p;
     label.textContent=downloadBusy?(en?'Preparing download…':'Подготовка загрузки…'):(en?'Download for ':'Скачать для ')+p;
-    action.disabled=downloadBusy;
+    if(p==='macOS')label.textContent=en?'Coming for macOS':'Готовится для macOS';
+    action.disabled=downloadBusy||p==='macOS';
+    action.setAttribute('aria-busy',String(downloadBusy));action.classList.toggle('is-busy',downloadBusy);
     availability.textContent=p==='Windows'?'V26.0.2 · .EXE':p==='Android'?'V26.0.2 · APK · 52.3 MB':(en?'The installer link will be added later.':'Ссылку на установщик добавим позже.');
     heading.textContent=(en?'Install on ':'Установка на ')+p;
     instructions.textContent=installation[p][language()];
